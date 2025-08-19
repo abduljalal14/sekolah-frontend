@@ -7,7 +7,7 @@
         <tr>
           <th>ID</th>
           <th>Nama</th>
-          <th>Kelas ID</th>
+          <th>Kelas</th>
           <th>Aksi</th>
         </tr>
       </thead>
@@ -15,7 +15,7 @@
         <tr v-for="guru in gurus" :key="guru.id">
           <td>{{ guru.id }}</td>
           <td>{{ guru.nama }}</td>
-          <td>{{ guru.kelas_id }}</td>
+          <td>{{ guru.kelas.nama }}</td>
           <td>
             <router-link   type="button" class="btn btn-warning me-3" :to="`/guru/edit/${guru.id}`">Edit</router-link>
             <button  type="button" class="btn btn-danger" @click="deleteGuru(guru.id)">Hapus</button>

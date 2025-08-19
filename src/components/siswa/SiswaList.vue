@@ -6,14 +6,14 @@
       <thead>
         <tr>
           <th>Nama</th>
-          <th>Kelas ID</th>
+          <th>Kelas</th>
           <th>Aksi</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="siswa in siswas" :key="siswa.id">
           <td>{{ siswa.nama }}</td>
-          <td>{{ siswa.kelas_id }}</td>
+          <td>{{ siswa.kelas.nama }}</td>
           <td >
             <router-link  type="button" class="btn btn-warning me-3" :to="`/siswa/edit/${siswa.id}`">Edit</router-link>
             <button type="button" class="btn btn-danger" @click="deleteSiswa(siswa.id)">Hapus</button>
