@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://mediumspringgreen-okapi-334317.hostingersite.com/api', 
+    baseURL: 'http://127.0.0.1:8000/api', 
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'

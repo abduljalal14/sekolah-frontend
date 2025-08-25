@@ -9,6 +9,8 @@ import KelasForm from '../components/kelas/KelasForm.vue';
 import SiswaByKelas from '../components/list/SiswaByKelas.vue';
 import GuruByKelas from '../components/list/GuruByKelas.vue';
 import AllCombined from '../components/list/AllCombined.vue';
+import OrtuForm from '@/components/ortu/OrtuForm.vue';
+import OrtuList from '@/components/ortu/OrtuList.vue';
 
 const routes = [
     { path: '/', redirect: '/login' },
@@ -16,6 +18,9 @@ const routes = [
     { path: '/siswa', component: SiswaList, meta: { requiresAuth: true } },
     { path: '/siswa/create', component: SiswaForm, meta: { requiresAuth: true } },
     { path: '/siswa/edit/:id', component: SiswaForm, props: true, meta: { requiresAuth: true } },
+    { path: '/ortu', component: OrtuList, meta: { requiresAuth: true } },
+    { path: '/ortu/create', component: OrtuForm, meta: { requiresAuth: true } },
+    { path: '/ortu/edit/:id', component: OrtuForm, props: true, meta: { requiresAuth: true } },
     { path: '/kelas', component: KelasList, meta: { requiresAuth: true } },
     { path: '/kelas/create', component: KelasForm, meta: { requiresAuth: true } },
     { path: '/kelas/edit/:id', component: KelasForm, props: true, meta: { requiresAuth: true } },

@@ -17,6 +17,9 @@
               <router-link to="/siswa" class="nav-link">Siswa</router-link>
             </li>
             <li class="nav-item">
+              <router-link to="/ortu" class="nav-link">Orang Tua</router-link>
+            </li>
+            <li class="nav-item">
               <router-link to="/guru" class="nav-link">Guru</router-link>
             </li>
 
