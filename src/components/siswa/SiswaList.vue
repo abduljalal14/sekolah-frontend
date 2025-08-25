@@ -7,6 +7,7 @@
         <tr>
           <th>Nama</th>
           <th>Kelas</th>
+          <th>Orang Tua</th>
           <th>Aksi</th>
         </tr>
       </thead>
@@ -14,6 +15,7 @@
         <tr v-for="siswa in siswas" :key="siswa.id">
           <td>{{ siswa.nama }}</td>
           <td>{{ siswa.kelas.nama }}</td>
+          <td>{{ siswa.ortu_id }}</td>
           <td >
             <router-link  type="button" class="btn btn-warning me-3" :to="`/siswa/edit/${siswa.id}`">Edit</router-link>
             <button type="button" class="btn btn-danger" @click="deleteSiswa(siswa.id)">Hapus</button>
